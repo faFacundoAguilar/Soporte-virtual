@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asesoría Argentina en España</title>
+  <link rel="icon" href="img/faviconarg.png" type="image/x-icon" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<style>
+  .hero {
+    background-image: url('img/madrid2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+</style>
+</head>
+<body class="text-gray-100 bg-white">
+<!-- Header -->
+<header class="fixed w-full z-20 top-0 shadow-md bg-[#242c4f] font-poppins">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      <!-- Logo + Título -->
+      <div class="flex items-center space-x-3">
+        <img src="img/escudo.png" alt="Escudo Argentina" class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-100" />
+        <h1 class="text-lg font-extrabold text-white select-none tracking-wide drop-shadow-md">Argentina en España</h1>
+      </div>
+
+      <!-- Botón hamburguesa (solo en móviles) -->
+      <button id="menu-toggle" class="sm:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Navegación -->
+      <nav id="menu" class="hidden sm:flex space-x-6 text-sm font-semibold">
+       <a href="#servicios" class="text-white hover:text-sky-400 transition-colors duration-300">
+  Servicios
+</a>
+<a href="#chatbot" class="text-white hover:text-sky-400 transition-colors duration-300">
+  Chat
+</a>
+<a href="https://eespa.cancilleria.gob.ar/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-sky-400 transition-colors duration-300">
+  Embajada
+</a>
+
+      </nav>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="sm:hidden hidden mt-2 space-y-2 text-sm font-semibold text-white">
+      <a href="#servicios" class="block px-4 py-2 hover:bg-sky-700 rounded">Servicios</a>
+      <a href="#chatbot" class="block px-4 py-2 hover:bg-sky-700 rounded">Chat</a>
+      <a href="https://eespa.cancilleria.gob.ar/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-sky-700 rounded">Embajada</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero h-screen flex items-center justify-center text-center pt-16 relative px-4">
+  <div
+    class="max-w-xl w-full mx-auto p-8 md:p-10 rounded-2xl z-10"
+    style="
+      background: rgba(36, 44, 79, 0.45);
+      box-shadow:
+        8px 8px 20px rgba(0, 0, 0, 0.4),
+        -8px -8px 20px rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: box-shadow 0.4s ease;
+    "
+    onmouseenter="this.style.boxShadow='inset 6px 6px 10px rgba(255, 255, 255, 0.2), inset -6px -6px 10px rgba(0, 0, 0, 0.6), 12px 12px 35px rgba(0,0,0,0.6)';"
+    onmouseleave="this.style.boxShadow='8px 8px 20px rgba(0, 0, 0, 0.4), -8px -8px 20px rgba(255, 255, 255, 0.15)';"
+  >
+    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-5 drop-shadow-lg">¿Sos argentino y estas en España?</h2>
+<p class="text-base md:text-xl text-white mb-8 leading-relaxed">
+  Conectate con nuestro asistente virtual y resolvé tus dudas sobre trámites, residencia y más.
+</p>
+<img src="img/banderin.svg" alt="Banderín decorativo" class="mx-auto mt-4 w-20 h-auto" />
+
+    
+   <a href="#chatbot"
+  class="mt-6 inline-block px-10 py-3 rounded-full font-semibold text-white bg-white bg-opacity-35 backdrop-blur-sm border border-white border-opacity-30 shadow-md
+         hover:bg-opacity-50 hover:shadow-lg hover:scale-105 transition transform duration-300 ease-in-out"
+  style="box-shadow: 0 4px 15px rgba(0, 140, 255, 0.4);">
+  Consultar ahora
+</a>
+
+
+  </div>
+</section>
+
+<!--servicios-->
+<section id="servicios" class="py-20 px-4 bg-gradient-to-br from-blue-100 via-white to-sky-100 font-[Poppins]">
+  <div class="max-w-7xl mx-auto">
+    <h3 class="text-4xl font-bold text-center text-sky-800 mb-16">Servicios más consultados</h3>
+    
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- tarjetas -->
+      <div class="group backdrop-blur-lg bg-white/60 border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-sky-200/50 shadow-inner mx-auto group-hover:rotate-6 transition-transform duration-300">
+          <!-- Icono personalizado -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2h18zm-6 4H9a3 3 0 00-3 3v1h12v-1a3 3 0 00-3-3z" />
+          </svg>
+        </div>
+        <h4 class="text-2xl font-semibold text-sky-800 mb-3 text-center">DNI y Pasaporte</h4>
+        <p class="text-gray-700 text-center text-base leading-relaxed">Renová tu DNI o pasaporte desde España con pasos claros y actualizados.</p>
+      </div>
+
+      <div class="group backdrop-blur-lg bg-white/60 border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-sky-200/50 shadow-inner mx-auto group-hover:-rotate-6 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-9 9 9M4 10v10h16V10" />
+          </svg>
+        </div>
+        <h4 class="text-2xl font-semibold text-sky-800 mb-3 text-center">Residencia y Empadronamiento</h4>
+        <p class="text-gray-700 text-center text-base leading-relaxed">Pasos esenciales para residir legalmente y empadronarte como argentino.</p>
+      </div>
+
+      <div class="group backdrop-blur-lg bg-white/60 border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-sky-200/50 shadow-inner mx-auto group-hover:rotate-3 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h4 class="text-2xl font-semibold text-sky-800 mb-3 text-center">Turnos Consulares</h4>
+        <p class="text-gray-700 text-center text-base leading-relaxed">Agendá tu cita consular para realizar trámites en la embajada.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Chatbot Section -->
+  <section id="chatbot" class="py-16 px-4 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+       <h3 class="text-3xl md:text-4xl font-extrabold text-sky-800 mb-6 tracking-tight drop-shadow-md">
+    Asistente Virtual
+  </h3>
+     <p class="text-lg md:text-xl text-gray-800 mb-3 leading-relaxed font-medium">
+    Consultá tu duda con Mateo, nuestro chatbot inteligente  <span class="font-semibold text-sky-700">🇦🇷</span>.
+  </p>
+    <div class="h-[650px] md:h-[750px] lg:h-[800px] w-full rounded-xl overflow-hidden shadow-lg border border-sky-200">
+
+        <!-- Iframe del Chatbase embebido -->
+        <iframe 
+          src="https://www.chatbase.co/chatbot-iframe/CSguVGmjqjQl4CLF5DDoh" 
+          width="100%" 
+          style="height: 100%; border: none;">
+        </iframe>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="bg-[#242c4f] text-white py-6 text-center text-sm mt-12">
+  <div class="max-w-screen-md mx-auto px-4">
+    <p class="mb-2">&copy; 2025 | Prototipo informativo para la comunidad argentina en España.</p>
+    <p class="text-gray-300">
+       Creado con fines educativos y de asistencia general.
+    </p>
+  </div>
+</footer>
+
+ <script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- Chatbase -->
+  <script>
+    (function(){
+      if(!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...args) => {
+          if (!window.chatbase.q) window.chatbase.q = [];
+          window.chatbase.q.push(args);
+        };
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") return target.q;
+            return (...args) => target(prop, ...args);
+          }
+        });
+      }
+      const onLoad = function() {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "CSguVGmjqjQl4CLF5DDoh"; // Reemplazar con tu ID si es otro
+        script.domain = "www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+  </script>
+  <!-- Chatbase Floating Widget Script -->
+<script>
+  window.chatbaseConfig = {
+    chatbotId: "CSguVGmjqjQl4CLF5DDoh"
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" defer></script>
+
+</body>
+</html>
